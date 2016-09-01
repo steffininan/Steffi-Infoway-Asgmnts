@@ -1,0 +1,79 @@
+
+<! DOCTYPE html>
+
+<head>
+	<title> Facebook Login </title>
+	<link rel="stylesheet" type="text/css">
+	
+	<style>
+		body 
+		{
+			font-size: 12px;
+			font-family: "Freight Sans Pro Book","Helvetica Neue", Helvetica, Arial, sans-serif;
+			background: #EBF5FB;
+		}
+		
+		.login
+		{
+			margin: 50px auto;
+			padding: 18px 20px;
+			width: 25%;
+			height: 25%;
+			background: #3f65b7;
+			border: 1px solid #172b4e;
+			border-bottom-color: #142647;
+			border-radius: 4px;
+			text-align: center;
+			
+		}
+		
+		.login-submit 
+		{
+			width: 17%;
+			font-size: 12px;
+			font-weight: bold;
+			color: #294779;
+			text-align: center;
+			background: #adcbfa;
+			border: 1px solid #284473;
+			border-radius: 4px;
+		}
+		
+		.sign-up
+		{
+			width: 19%;
+			font-size: 12px;
+			font-weight: bold;
+			color: #294779;
+			text-align: center;
+			background: #adcbfa;
+			border: 1px solid #284473;
+			border-radius: 4px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<form class="login">
+		<h3> FACEBOOK LOGIN </h3>
+		
+		<!-- For Email Id -->
+		<label for="email">Email: &nbsp; </label>
+		<input required type="email" name="email" placeholder="youremail@domain.com">
+		<br><br>
+		
+		<!-- For Password -->
+		<label for="password">Password: &nbsp; </label>
+		<input required type="password" name="password" placeholder="Password">
+		<br><br>
+		
+		<!-- Login -->
+		<input type="submit" value="Log In" class="login-submit">
+		<input type="button" value="Sign Up" class="sign-up" onclick="location.href='asgmnt3RegPg.html';">
+		
+	</form>
+
+
+</body>
+</html>
