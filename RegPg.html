@@ -1,0 +1,107 @@
+
+<! DOCTYPE html>
+
+<head>
+	<title> Facebook Registration </title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Niconne">
+	
+	<style>
+			
+		/* Registration Page CSS */
+		body
+		{
+			background-color: #E6B0AA;
+			font-family: Book Antiqua;
+			font-size: 12px;
+		}
+		
+		.leg
+		{
+			font-family: Niconne, serif;
+			font-size:20px;
+		}
+		
+		fieldset
+		{
+			width: 45%;
+			background-color: #F0B27A;
+			border-width: 2px;
+			border-color: darkblue;
+			border-radius: 25px;
+		}
+		
+		button
+		{
+			background: #384313;
+			border: none;
+			border-radius: 20px;
+			color: #ffffff;
+			display: block;
+			font: 13px Georgia, "Times New Roman", Times, serif;
+			text-shadow: 0 1px 1px #000000;
+			text-transform: uppercase;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<form>
+		<fieldset>
+			<legend class="leg">Step 1: Basic Details</legend>
+				<label for="fname">First Name: </label>
+				<input required type="text" name="fname" id="fname" maxlength="30"><br><br>
+					
+				<label for="lname">Last Name: </label>
+				<input required type="text" name="lname" id="lname" maxlength="30"><br><br>
+					
+				<label for="address">Address: </label>
+                <textarea id="address" name="address" rows="5" required> </textarea> <br><br>
+					
+				<label for="city">City: </label>
+				<input required type="text" name="city" id="city" maxlength="25"><br><br>
+					
+				<label for="state">State: </label>
+				<input required type="text" name="state" id="state" maxlength="25"><br><br>
+					
+				<label for="zip">Zip: </label>
+				<input required type="number" name="zip" id="zip" maxlength="11"><br><br>
+				
+				<label for="myPhone">Phone: </label>
+                <input required type="number" name="myPhone" id="myPhone" maxlength="15"><br><br>
+							
+				<label for="myEmail">Email: </label> 
+                <input required type="email" name="myEmail" id="myEmail" maxlength="25"><br><br>
+
+				<label for="bday">Birthday: </label>
+				<input required type="date" name="bday"> <br>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend class="leg">Gender</legend>
+				<input type="radio" name="gender" value="male" required> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other <br>			
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend class="leg"> Reasons for joining Facebook </legend>
+				<input type="checkbox" name="reason" value="career">Career Connect<br>
+				<input type="checkbox" name="reason" value="frnds">Connect with Friends <br>
+				<input type="checkbox" name="reason" value="business">Expand Personal Business <br>
+				<input type="checkbox" name="reason" value="other">Other <br>
+		</fieldset>
+		
+		<br> <br>
+		
+		<button type="submit" value="Submit">Submit </button>
+
+	</form>
+
+</body>
+</html>
