@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" media="screen"> 
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Niconne">
+
+	
+	
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.row:after 
+		{
+			content: "";
+			clear: both;
+			display: block;
+		}
+		[class*="col-"] 
+		{
+			float: left;
+			padding: 15px;
+		}
+		html 
+		{
+			font-family: Book Antiqua;
+		}
+
+		body
+		{
+			background-color:rgb(233, 211, 145);
+		}
+
+		h2{color:rgb(122, 0, 61);}
+
+		/* CSS for header */
+		.header 
+		{
+			background-color: #FFA07A;
+			color:rgb(102, 0, 102);
+			padding: 1px;
+			
+		}
+		.menu ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu li 
+		{
+			padding: 8px;
+			margin-bottom: 7px;
+			background-color :#F5DEB3;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			color:rgb(204, 0, 0);
+		}
+		.menu li:hover 
+		{
+			background-color: #F0E68C;
+		}
+
+		a{font-size:18pt;}
+
+		/* CSS for aside part*/
+		.aside 
+		{
+			background-color: #F5DEB3;
+			padding: 15px;
+			text-align: center;
+			font-size: 14px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		}
+		.footer 
+		{
+			background-color: #0099cc;
+			text-align: center;
+			font-size: 8px;
+			padding: 3px;
+		}
+
+		/* For desktop: */
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+
+		/* ----------------------------------------------------*/
+		@media only screen and (max-width: 768px) 
+		{
+			/* For mobile phones: */
+			[class*="col-"] {
+				width: 100%;
+			}
+			
+			header{
+				font-size:25pt;
+				color:grey;
+				background-color: hot pink;
+			}
+			
+			h2 {
+				 color: green;
+				 font-size: 36pt;
+				 font-weight: bold;
+			}
+			
+			body{
+				background-color:rgb(133, 173, 51);
+			 
+			}
+			
+			.menu li {
+				color: black;
+				font-family:Times New Roman;
+				font-size:12pt;
+				font-weight:bold;
+			}
+			
+			img { border: 10px inset green }
+			
+			a{
+				font-weight:bold;
+				font-family:Arial;
+				font-size:10pt;
+				color:white;
+			}
+		}
+				
+		/* ----------------------------------------------------*/		
+			
+		@media only screen and (min-width: 600px)
+		and (max-width: 767px)
+		{
+			
+			p {
+			 color: blue;
+			 font-size: 16pt;
+			 font-weight: bold;
+			}
+			
+			img { border: 5px ridge red }
+			
+			body{
+				background-color:rgb(255, 255, 204);
+			}
+			a{
+				font-weight:bold;
+				font-family:Comic Sans Ms;
+				font-size:15pt;
+				color:green;
+			}
+			.menu li {
+				color: brown;
+				font-family:Arial;
+				font-size:15pt;
+				font-weight:bold;
+			}
+			
+			
+		}
+	
+	</style>
+
+</head>
+
+<body>	
+	<header>
+		<div class="header">
+			<h1 style="font-family:'Niconne', serif">Experimenting with Media queries, Different font styles and other CSS Features</h1>
+		</div>
+	</header>
+	
+	
+	<div class="row">
+
+		<div class="col-3 menu">
+			<ul>
+				<li>Risks of using a Wi-Fi hotspot</li>
+				<li>Was I ever at risk??? </li>
+				<li>Would I take the necessary precautions??</li>
+				<li>Surfing safely using Wi-Fi hotspot</li>
+			</ul>
+			<img src="http://f.tqn.com/y/netsecurity/1/L/b/E/Wi-Fi_EvilTwin_Magictorch_getty.jpg" height="300" width="290" border="1px">
+		</div>
+
+			
+		<div class="col-4">
+			<h2 style="font-family:'Tangerine', serif">Risks of using a Wi-Fi hotspot</h2>
+			
+			<p><b>Risk 1: </b>Most, if not all, public hot spots do not encrypt data, allowing passwords, email messages, and other information to be intercepted by nefarious types. 
+			<b>Precaution 1:</b> The best defense starts with a good offense, in this case that means educating the user or creating automated policies on devices to prevent interception.</p>
+			<p><b>Risk 2: </b>Many public hot spots have multiple wireless networks and knowing which one to connect to could be the difference between a secure session, or a session that exposes critical information to interception. 
+			<b>Precaution 2: </b>Luckily, some OSes incorporate hot spot profile settings, which will automatically inform the user of what wireless networks are available and what ones they can connect to. In the best case scenarios, users are automatically prompted to approve new WiFi connections, and once approved, can then assign a profile for future use.</p>
+			<p><b>Risk 3:</b> Many organizations still leave some applications open to non-encrypted traffic to ease mobile worker woes. However, that ease of use can come at a high price, one where data can be intercepted and corporate resources infiltrated. 
+			<b>Precaution 3:</b> The simple solution here is to make sure all corporate resources can only be accessed remotely via a VPN connection. While that may require a user to log in numerous times (first into the hotspot, then into the VPN and then into the application), VPNs can protect data from interception and networks from compromise.</p>
+
+		</div>
+		
+		<div class="col-5">
+			<h2 style="font-family:'Tangerine', serif">Was I ever at risk ??</h2>
+			<p>Not yet .. I never connect to hotspots outside my home. I am just connected to my home wi-fi network. </p>
+		
+		
+			<h2 style="font-family:'Tangerine', serif">Would I take the necessary precautions?? ??</h2>
+			<p>Definitely Yes !!!  I will be careful about the same. </p>
+		</div>
+		
+		<div class="col-3 right">
+			<div class="aside">
+				<h2 style="font-family:'Tangerine', serif">Surfing safely using Wi-Fi hotspot</h2>
+				<p><b>Use SSL for sensitive sites/services:</b>You should always make sure any Web site you log on to that deals with sensitive information or any service you use (such as e-mail and FTP) are protected with SSL encryption. </p>
+				<p><b>Use a Virtual Private Network (VPN) connection:</b> This would encrypt all your Internet traffic. You could essentially use unencrypted connections to sites and services, and hackers at the hotspot won't be able to intercept anything. You would basically be using the Internet connection at the VPN server end-point for access to the Web. </p>
+			
+			</div>
+		</div>
+
+</div>
+
+		
+
+</body>
+</html>
+
